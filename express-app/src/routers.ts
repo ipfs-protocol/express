@@ -1,8 +1,8 @@
 import { Router } from 'express';
-import RootView from './routines/aroot'
+import RootPage from './routines/aroot'
 const router = Router();
 
 router
-  .get('^/$|index(.html)?', RootView.RootView);
+  .get('^/$|index(.html)?', RootPage.RootPage);
 
 export default router;

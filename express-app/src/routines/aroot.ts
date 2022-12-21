@@ -1,7 +1,7 @@
 import { Request, Response} from 'express';
 import SendResult from '../function/SendResult';
 
-const RootView = async(req: Request, res: Response): Promise<Response<any, Record<string, any>>> =>
+const RootPage = async(req: Request, res: Response): Promise<Response<any, Record<string, any>>> =>
 {
   try {
     const result = {
@@ -15,4 +15,4 @@ const RootView = async(req: Request, res: Response): Promise<Response<any, Recor
   }
 }
 
-export default { RootView };
+export default { RootPage };
