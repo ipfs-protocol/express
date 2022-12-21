@@ -1,10 +1,8 @@
 import { Router } from 'express';
-
+import RootView from './routines/aroot'
 const router = Router();
 
 router
-  .get('^/$|index(.html)?', (req, res)=>{
-    res.send('Hello gogogodddddd')
-  });
+  .get('^/$|index(.html)?', RootView.RootView);
 
 export default router;
